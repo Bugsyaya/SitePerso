@@ -1,0 +1,342 @@
+@main("Projet d'étude")(menu()) {
+	<div class="row projetEtude">
+    <!--<div ng:app="myApp">
+      <div ng:controller="Tester">
+        <div ng:repeat="item in items">
+           <span data-ng-bind-html="item | translate | htmlSafe"></span>
+        </div>
+      </div>
+    </div>-->
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-12">
+      <div class="titre col-lg-12 col-md-12 col-xs-12">
+        Recherche de photos sur un site web
+      </div>
+      <div class="col-lg-12 col-md-12 col-xs-12 row">
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche">
+          ↘
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche centrerFleche">
+            ↓
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche pull-right">
+          ↙
+        </div>
+        <div class="col-lg-12 col-md-12 col-xs-12" >
+          <a href = "/ajax-flickr/index.html" >
+            Recherche de photos
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche">
+          ↗
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche centrerFlecheHaut">
+          <center>
+            ↑
+          </center>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-3 fleche pull-right">
+          ↖
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <p> Ce projet a été réalisé en fin de deuxième année en trois semaines. Il s'agit d'une recherche de photos par ville et/ou par auteur. Pour cela, nous avons utilisé l'API flickr. Le but de ce projet était l'utilisation du framwork JQuery. Il a été réalisé en binôme.
+          <br/>
+          Le site devait contenir différentes fonctionnalités :
+          <br/>
+          - Permettre à l'utilisateur de choisir un mode de visualisation des photos (verticalement, en groupe ou sous forme d'un carrousel)
+          <br/>
+          - Donner à l'utilisateur de chosir le nombre de photos qu'il voulait visualiser
+          <br/>
+          - Faire une recherche par ville et/ou par auteur
+          <br/>
+          - Effectuer une recherche de photos à partir d'une date en particulier
+          <br/>
+          - Afficher les détails d'une photo lors du clique sur cette dernière 
+        </p>
+        <span class="label label-success">JQuery</span>
+        <br><br>
+      </div>
+      <div class="thumbnail col-lg-6 col-md-6 col-xs-12">
+        <img src="@routes.Assets.at("images/enPageNantes.png")" alt="solitaireDebut">
+      </div>
+      <div class="thumbnail col-lg-6 col-md-6 col-xs-12">
+        <img src="@routes.Assets.at("images/regroupementNantes.png")" alt="...">
+      </div>
+      <div class="thumbnail col-lg-6 col-md-6 col-xs-12">
+        <img src="@routes.Assets.at("images/carrouselNantes.png")" alt="...">
+      </div>
+      <div class="thumbnail col-lg-6 col-md-6 col-xs-12">
+        <img src="@routes.Assets.at("images/detailNantes.png")" alt="...">
+      </div>
+    </div>
+    
+      <br/>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-2">
+        </div>
+        <div class="col-lg-8 col-md-8 col-xs-12">
+          <div class="titre">
+            Ergonomie d'un site
+          </div>            
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-12">
+                <p>Ce projet a été réalisé en fin de deuxième année sur un demi semestre. Nous devions réaliser une refont érgonomique du site de <a href="http://www.sarzeau.fr/">sarzeau</a> en équipe de 4 personnes. Pour cela, nous avons du réfléchir à l'arborescence du site ainsi que des fonctionnalités qui pouvaient s'y trouver (principalement pour les personnes handicapées). De plus, nous devions faire en sorte que le site soit le plus lisible possible et avoir une grande facilité d'utilisation pour tout le public visé par ce site. L'une des difficultés a été le nombre d'informations qui peut se trouver sur un site de mairie. Toutes les pages ne sont pas crées car le but premier était l'ergonomie de la page d'accueil. Cependant, nous avons du faire attention à la responsivité du site pour qu'il soit visible sur mobile et ainsi accessible de partout. Nous avons utilisé le framework css bootstrap.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↘
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↓
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↙
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <center>
+                  <div class="col-lg-12 col-md-12 col-xs-12" >
+                    <a href = "/sarzeau-boot/" >
+                      Site sarzeau
+                    </a>
+                  </div>
+                </center>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">↗</div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↑
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↖
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <img src="@routes.Assets.at("images/sarzeau.png")" style ="width:auto;height:auto;" class="img-responsive" alt="Responsive image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+
+
+    <div class="row">
+      <div class="col-lg-2 col-md-2">
+      </div>
+        <div class="col-lg-8 col-md-8 col-xs-12">
+          <div class="titre">
+            Jeu du solitaire
+          </div>            
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-12">
+                <p>Ce projet a été réalisé en début de deuxième année. Il devait être entièrement fait en php.
+                  <br/>
+                  Le jeu se déroule de la façon suivante :
+                  <br/>
+                  - Il faut choisir un fruit à supprimer en premier
+                  <br/>
+                  - Choisir un autre fruit qui dispose d'un autre fruit adjacent ainsi qu'une case vide, dans un alignement vertical ou horizontal
+                  <br/>
+                  - Une fois ce fruit choisi, on "saute" le fruit adjacent pour le poser sur la case jusque là vide
+                  <br/>
+                  - Le but étant de n'avoir plus qu'un seul fruit
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↘
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↓
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↙
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <center>
+                  <div class="col-lg-12 col-md-12 col-xs-12" >
+                    <a href = "solitaire.php" >
+                      Jeu du solitaire
+                    </a>
+                  </div>
+                </center>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">↗</div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↑
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-1 col-md-1 col-xs-1" >
+                  <div class="fleche">
+                    ↖
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <img src="@routes.Assets.at("images/solitaireDebut.png")" style ="width:auto;height:auto;" class="img-responsive" alt="Responsive image"/>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <img src="@routes.Assets.at("images/solitaireBille.png")" style ="width:auto;height:auto;"class="img-responsive" alt="Responsive image"/>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <img src="@routes.Assets.at("images/solitaireDeplacement.png")" style ="width:auto;height:auto;"class="img-responsive" alt="Responsive image"/>
+            </div>
+          </div>
+
+
+          <br/>
+
+          <div class="titre">
+            Labyrinthe
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-12" >
+              <p>Ce projet a été réalisé en fin de première année, en groupe de 4 personnes. Il a été développé en Java.
+                <br/>
+                Le jeu se déroule de la façon suivante :
+                <br/>
+                - Il faut avant tout choisir le niveau de dificulté
+                <br/>
+                - Aider Link à trouver la sortie du labyrinthe
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2" >
+                  <div class="fleche">
+                    ↘
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↓
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2" >
+                  <div class="fleche">
+                    ↙
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <center>
+                  <div class="col-lg-12 col-md-12 col-xs-12" >
+                    <a href = "/Labyrinthe.exe">
+                      Labyrinthe (téléchargement)
+                    </a>
+                  </div>
+                </center>
+              </div>
+              <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2" >
+                  <div class="fleche">
+                    ↗
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-8" >
+                  <center>
+                    <div class="fleche">
+                      ↑
+                    </div>
+                  </center>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2" >
+                  <div class="fleche">
+                    ↖
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12" >
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style ="width:auto;height:50%;display: block;" >
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <center>
+                      <img src="@routes.Assets.at("images/labyrintheMenu.png")" style ="width:45%;height:100%;" alt="solitaireDebut">
+                    </center>
+                  </div>
+                  <div class="item">
+                    <center>
+                      <img src="@routes.Assets.at("images/labyrintheFacile.png")" style ="width:50%;height:100%;" alt="...">
+                    </center>
+                  </div>
+                  <div class="item">
+                    <center>
+                      <img src="@routes.Assets.at("images/labyrintheFacileSolution.png")" style ="width:50%;height:100%;" alt="...">
+                    </center>
+                  </div>
+                  <div class="item">
+                    <center>
+                      <img src="@routes.Assets.at("images/labyrintheMoyen.png")" style ="width:50%;height:100%;" alt="...">
+                    </center>
+                  </div>
+                  <div class="item">
+                    <center>
+                      <img src="@routes.Assets.at("images/labyrintheChuckNorris.png")" style ="width:50%;height:100%;" alt="...">
+                    </center>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2">
+        </div>
+      </div>
+    </div>
+}(footer())
