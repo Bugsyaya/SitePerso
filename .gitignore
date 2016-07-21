@@ -1,3 +1,19 @@
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
 logs
 target
 /.idea
@@ -14,10 +30,6 @@ target
 .metadata/
 .sbtserver/
 LICENSE
-activator
-activator.bat
-build.sbt
-conf/
 project/
 public/node_modules/
 ../activator
